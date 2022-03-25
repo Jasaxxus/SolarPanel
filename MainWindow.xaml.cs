@@ -27,8 +27,33 @@ namespace SolarPanel
 
         private void calculate(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine(cityId.Text);
-            Console.WriteLine();
+            float sunHours = 0;
+            try
+            {
+                if(powerId.Text == null || powerId.Text.Trim().Equals(""))
+                {
+                    switch(cityId.Text)
+                    {
+                        case "Riga":
+                            sunHours = 2.7f;
+                            break;                        
+                        case "Madrid":
+                            sunHours = 3.7f;
+                            break;
+                        case "London":
+                            sunHours = 2.3f;
+                            break;
+                        case "New York":
+                            sunHours = 3.2f;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
+            }
         }
     }
 }
