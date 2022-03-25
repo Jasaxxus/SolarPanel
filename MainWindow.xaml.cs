@@ -28,32 +28,43 @@ namespace SolarPanel
         private void calculate(object sender, RoutedEventArgs e)
         {
             float sunHours = 0;
-            try
+            switch (cityId.Text)
             {
-                if(powerId.Text == null || powerId.Text.Trim().Equals(""))
-                {
-                    switch(cityId.Text)
-                    {
-                        case "Riga":
-                            sunHours = 2.7f;
-                            break;                        
-                        case "Madrid":
-                            sunHours = 3.7f;
-                            break;
-                        case "London":
-                            sunHours = 2.3f;
-                            break;
-                        case "New York":
-                            sunHours = 3.2f;
-                            break;
-                        default:
-                            break;
-                    }
-                }
-            } catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error");
+                case "Riga":
+                    sunHours = 2.7f;
+                    break;
+                case "Madrid":
+                    sunHours = 3.7f;
+                    break;
+                case "London":
+                    sunHours = 2.3f;
+                    break;
+                case "New York":
+                    sunHours = 3.2f;
+                    break;
+                default:
+                    errorId.Text = "Choose City";
+                    break;
             }
+            if (sunHours != 0)
+            {
+                try
+                {
+                    if (powerId.Text == null || powerId.Text.Trim().Equals("")) wattCalc(sunHours, 250);
+                    else wattCalc(sunHours, Int32.Parse(powerId.Text));
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error");
+                }
+            }
+        }
+
+
+        public float wattCalc(float sunHours, int power)
+        {
+            return ((Int32.Parse(squareId.Text) / 1.6f) * power) * sunHours;
         }
     }
 }

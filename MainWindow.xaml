@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SolarPanel"
         mc:Ignorable="d"
-        Title="Solar Panel Calculator" Height="354" Width="242" ShowInTaskbar="False" ResizeMode="NoResize">
+        Title="Solar Panel Calculator" Height="298" Width="485" ShowInTaskbar="False" ResizeMode="NoResize">
     <Grid>
-        <TextBox x:Name="squareId" HorizontalAlignment="Left"  Margin="33,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Height="21"/>
-        <Button x:Name="calcButton" Click="calculate" Content="Calculate" HorizontalAlignment="Left" Margin="33,259,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="168" Height="28" UseLayoutRounding="True" BorderThickness="1,1,1,1" FontFamily="Arial"/>
-        <TextBlock HorizontalAlignment="Left" Margin="33,31,0,0" TextWrapping="Wrap" Text="Area in sqm" VerticalAlignment="Top" FontFamily="Arial" Height="16" Width="69"/>
-        <ComboBox x:Name="cityId" HorizontalAlignment="Left" Margin="33,105,0,0" VerticalAlignment="Top" Width="168" Height="25">
+        <TextBox x:Name="squareId" HorizontalAlignment="Left"  Margin="32,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Height="21"/>
+        <Button x:Name="calcButton" Click="calculate" Content="Calculate" HorizontalAlignment="Left" Margin="32,209,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="168" Height="28" UseLayoutRounding="True" BorderThickness="1,1,1,1" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,12,0,0" TextWrapping="Wrap" Text="Area in sqm" VerticalAlignment="Top" FontFamily="Arial" Height="16" Width="69"/>
+        <ComboBox x:Name="cityId" HorizontalAlignment="Left" Margin="32,81,0,0" VerticalAlignment="Top" Width="168" Height="25">
             <ComboBoxItem>
                 Riga
             </ComboBoxItem>
@@ -24,9 +24,9 @@
                 New York
             </ComboBoxItem>
         </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="33,89,0,0" TextWrapping="Wrap" Text="City" VerticalAlignment="Top" FontFamily="Arial" Height="16" Width="92"/>
-        <TextBox x:Name="powerId" HorizontalAlignment="Left"  Margin="33,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Height="21"/>
-        <TextBlock HorizontalAlignment="Left" Margin="33,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial" Height="16" Width="134"><Run Text="Power"/><Run Language="ru-ru" Text=" "/><Run Text="in watt (optional)"/></TextBlock>
-        <TextBlock x:Name="errorId" HorizontalAlignment="Left" Margin="33,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Foreground="Red"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,65,0,0" TextWrapping="Wrap" Text="City" VerticalAlignment="Top" FontFamily="Arial" Height="16" Width="92"/>
+        <TextBox x:Name="powerId" HorizontalAlignment="Left"  Margin="32,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Height="21"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial" Height="16" Width="134"><Run Text="Power"/><Run Language="ru-ru" Text=" "/><Run Text="in watt (optional)"/></TextBlock>
+        <TextBlock x:Name="errorId" HorizontalAlignment="Left" Margin="32,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Foreground="Red" TextAlignment="Center"/>
     </Grid>
 </Window>
