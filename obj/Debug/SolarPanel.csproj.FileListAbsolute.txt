@@ -1,0 +1,16 @@
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\bin\Debug\SolarPanel.exe.config
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\bin\Debug\SolarPanel.exe
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\bin\Debug\SolarPanel.pdb
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\obj\Debug\SolarPanel.csproj.AssemblyReference.cache
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\obj\Debug\SolarPanel.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\obj\Debug\MainWindow.g.cs
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\obj\Debug\App.g.cs
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\obj\Debug\SolarPanel_MarkupCompile.cache
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\obj\Debug\SolarPanel_MarkupCompile.lref
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\obj\Debug\MainWindow.baml
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\obj\Debug\SolarPanel.g.resources
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\obj\Debug\SolarPanel.Properties.Resources.resources
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\obj\Debug\SolarPanel.csproj.GenerateResource.cache
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\obj\Debug\SolarPanel.csproj.CoreCompileInputs.cache
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\obj\Debug\SolarPanel.exe
+C:\Users\Jasaxxus\source\repos\SolarPanel\SolarPanel\obj\Debug\SolarPanel.pdb
