@@ -1,17 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace SolarPanel
 {
@@ -50,9 +38,8 @@ namespace SolarPanel
             {
                 try
                 {
-                    if (powerId.Text == null || powerId.Text.Trim().Equals("")) wattCalc(sunHours, 250);
-                    else wattCalc(sunHours, Int32.Parse(powerId.Text));
-
+                    if (powerId.Text == null || powerId.Text.Trim().Equals("")) Console.WriteLine(kwattCalc(sunHours, 250));
+                    else kwattCalc(sunHours, Int32.Parse(powerId.Text));
                 }
                 catch (Exception ex)
                 {
@@ -62,9 +49,9 @@ namespace SolarPanel
         }
 
 
-        public float wattCalc(float sunHours, int power)
+        public float kwattCalc(float sunHours, int power)
         {
-            return ((Int32.Parse(squareId.Text) / 1.6f) * power) * sunHours;
+            return (((float.Parse(squareId.Text.Replace('.', ',')) / 1.6f) * power) * sunHours) / 1000;
         }
     }
 }
